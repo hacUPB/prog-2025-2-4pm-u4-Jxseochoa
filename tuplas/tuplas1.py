@@ -1,3 +1,5 @@
+''
+''
 # Tupla vacía
 coordenada = ()
 
@@ -26,4 +28,20 @@ print(f"El {fabricante} {modelo} se lanzó en {año}")
 # Desempaquetado con *
 lat, lon = coordenada
 print(f"Latitud: {lat}, Longitud: {lon}")
-      
+''
+lista=[7,4,9]
+lista[0]= 65
+
+lista_de_tuplas =[(0,0), (3,5), (8,3)] 
+print(lista_de_tuplas)
+lista_de_tuplas.append((45,6))
+print(lista_de_tuplas) 
+lista_de_tuplas[0]=(1,1)
+print(lista_de_tuplas)
+lista_de_tuplas[2]="palabra"
+print(lista_de_tuplas)
+
+tupla_de_listas = ([2,4,3], [9,6,12])
+print(tupla_de_listas)
+tupla_de_listas[1][0] = 18
+print(tupla_de_listas)
