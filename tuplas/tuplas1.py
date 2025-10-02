@@ -45,3 +45,9 @@ tupla_de_listas = ([2,4,3], [9,6,12])
 print(tupla_de_listas)
 tupla_de_listas[1][0] = 18
 print(tupla_de_listas)
+
+numeros = (2, 34, 56, 12, 4)
+if 12 in numeros:
+    print("El 12 está en la tupla")
+else: 
+    print("Valor no encontrado")
