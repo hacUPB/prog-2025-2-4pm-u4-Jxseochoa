@@ -3,7 +3,7 @@
 ##Desarrolle una función que calcule la eficiencia de combustible de una aeronave a lo largo de diferentes etapas de vuelo.
 
 def analizar_eficiencia(distancias, combustibles):
-    eficiencias = [] # No se coloca la variable "e" porque sino reemplaza la lista y solo se queda el último valor.
+    eficiencias = []
     for d, c in zip(distancias, combustibles):
         eficiencia = d / c
         eficiencias.append(eficiencia)
@@ -21,7 +21,7 @@ def analizar_eficiencia(distancias, combustibles):
         if e < min_eficiencia:
             min_eficiencia = e
             tramo_min = tramo
-        tramo += 1  
+        tramo += 1
 
     suma = 0
     contador = 0
@@ -32,12 +32,8 @@ def analizar_eficiencia(distancias, combustibles):
 
     return [eficiencias, [tramo_max, max_eficiencia], [tramo_min, min_eficiencia], [promedio]]
 
-tramos_distancia = [800, 1200, 1000, 750]
-tramos_combustible = [2400, 3000, 2800, 2000]
 
-resultado = analizar_eficiencia(tramos_distancia, tramos_combustible)   
+distancias = [800, 1200, 1000, 750]
+combustibles = [2400, 3000, 2800, 2000]
 
-print("Eficiencias por tramo:", resultado[0])
-print("Tramo más eficiente:", resultado[1])
-print("Tramo menos eficiente:", resultado[2])
-print("Eficiencia promedio:", resultado[3][0])
+print(analizar_eficiencia(distancias, combustibles))
