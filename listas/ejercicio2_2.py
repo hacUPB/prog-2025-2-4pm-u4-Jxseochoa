@@ -14,13 +14,13 @@ def cargar_cajas(pesos, peso_maximo):
             break
         i += 1
 
-    print("Cajas seleccionadas:", seleccion)
-    print("Peso total cargado:", peso_total, "kg")
+    return [seleccion, [peso_total]]
 
 
 pesos_cajas = [120, 400, 300, 180, 450, 200]
 peso_max_avion = 1000
 
-cargar_cajas(pesos_cajas, peso_max_avion)
+print(cargar_cajas(pesos_cajas, peso_max_avion))
+
 
 
