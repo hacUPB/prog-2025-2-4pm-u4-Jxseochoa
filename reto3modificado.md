@@ -213,7 +213,7 @@ else:
 ```
 acciones_aoa = {"a": 1.0, "d": -1.0, "m": 0.0}
 
-eleccion_aoa = input("¿Ángulo de ataque: (a)umentar, (d)isminuir o (m)antener? ").strip().lower()
+eleccion_aoa = input("¿Ángulo de ataque: (a)umentar, (d)isminuir o (m)antener? ")
 
 if eleccion_aoa in acciones_aoa:
     delta_aoa = acciones_aoa[eleccion_aoa]
@@ -261,7 +261,7 @@ else:
 print("Velocidad actual:", v, "m/s")
 acciones_vel = {"a": 10.0, "d": -10.0, "m": 0.0}
 
-decision_v = input("¿Velocidad: (a)umentar, (d)isminuir o (m)antener? ").strip().lower()
+decision_v = input("¿Velocidad: (a)umentar, (d)isminuir o (m)antener? ")
 
 if decision_v in acciones_vel:
     delta_v = acciones_vel[decision_v]
@@ -354,7 +354,7 @@ def ejercicio1():
             print("Segundo", segundo)
             print("Ángulo de ataque actual:", aoa, "°")
 
-            eleccion_aoa = input("¿Ángulo de ataque: (a)umentar, (d)isminuir o (m)antener? ").strip().lower()
+            eleccion_aoa = input("¿Ángulo de ataque: (a)umentar, (d)isminuir o (m)antener? ")
             if eleccion_aoa in acciones_aoa:
                 aoa += acciones_aoa[eleccion_aoa]
                 if acciones_aoa[eleccion_aoa] > 0:
@@ -380,7 +380,7 @@ def ejercicio1():
                 print("Estado: Crítico")
 
             print("Velocidad actual:", v, "m/s")
-            decision_v = input("¿Velocidad: (a)umentar, (d)isminuir o (m)antener? ").strip().lower()
+            decision_v = input("¿Velocidad: (a)umentar, (d)isminuir o (m)antener? ")
             if decision_v in acciones_vel:
                 v += acciones_vel[decision_v]
                 if acciones_vel[decision_v] > 0:
